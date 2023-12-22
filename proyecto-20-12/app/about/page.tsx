@@ -30,8 +30,8 @@ const AboutPage: React.FC = () => {
             height={200} // Adjust the height as needed
             className="rounded-full"
           />
-          <p className="text-gray-700 mt-2 text-lg">
-          <Link href="/resume">Bruno Belloso</Link>, CEO & Founder of Wenova
+          <p className="mt-2 text-lg">
+          <Link href="/resume"><span className="text-blue-500">Bruno Belloso</span></Link>, <span className="text-gray-700">CEO & Founder of Wenova</span>
           </p>
         </div>
       </div>

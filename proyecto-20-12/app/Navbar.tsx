@@ -24,9 +24,9 @@ const Navbar: React.FC = () => {
             height={324}
             className={"max-w-[200px] lg:max-w-[300px]"}
           />
-          <div className="lg:hidden">
+          <div className="lg:hidden pr-4">
             <button
-              className="pr-4 text-black focus:outline-none"
+              className="text-black focus:outline-none"
               onClick={handleMenuToggle}
             >
               {isMenuOpen ? "Close Menu" : "Open Menu"}
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
               <span
-                className="block text-white p-16 text-xl"
+                className="block text-white p-8 text-xl"
                 onClick={handleMenuToggle}
               >
                 {link.label}
