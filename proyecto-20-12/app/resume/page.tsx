@@ -23,8 +23,8 @@ const ResumePage: React.FC = () => {
           <Image
             src="/profile.jpg" // Replace with the actual path to the profile photo
             alt="Bruno Belloso"
-            width={200} // Adjust the width as needed
-            height={200} // Adjust the height as needed
+            width={500} // Adjust the width as needed
+            height={500} // Adjust the height as needed
             className="rounded-full mb-2"
           />
           <p className="text-gray-700 text-lg">Bruno Belloso, Web Developer</p>

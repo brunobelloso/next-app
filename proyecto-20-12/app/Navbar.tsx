@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 // Navbar.tsx
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { navLinks } from './navlinks';
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { navLinks } from "./navlinks";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,14 +22,14 @@ const Navbar: React.FC = () => {
             alt="Your Image Alt Text"
             width={1024}
             height={324}
-            style={{ maxWidth: '300px' }}
+            className={"max-w-[200px] lg:max-w-[300px]"}
           />
           <div className="lg:hidden">
             <button
               className="text-black focus:outline-none"
               onClick={handleMenuToggle}
             >
-              {isMenuOpen ? 'Close Menu' : 'Open Menu'}
+              {isMenuOpen ? "Close Menu" : "Open Menu"}
             </button>
           </div>
           <div className="hidden lg:flex space-x-4">
@@ -42,12 +42,17 @@ const Navbar: React.FC = () => {
         </div>
         <div
           className={`lg:hidden mt-12 absolute top-19 left-0 w-full bg-blue-500 pt-4 ${
-            isMenuOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+            isMenuOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
           } transition-opacity duration-300 transform origin-top`}
         >
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}>
-              <span className="block text-white p-16 text-xl">{link.label}</span>
+              <span
+                className="block text-white p-16 text-xl"
+                onClick={handleMenuToggle}
+              >
+                {link.label}
+              </span>
             </Link>
           ))}
         </div>
