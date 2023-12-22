@@ -1,6 +1,7 @@
 // about.tsx
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutPage: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ const AboutPage: React.FC = () => {
             className="rounded-full"
           />
           <p className="text-gray-700 mt-2 text-lg">
-            Bruno Belloso, CEO & Founder of Wenova
+          <Link href="/resume">Bruno Belloso</Link>, CEO & Founder of Wenova
           </p>
         </div>
       </div>
