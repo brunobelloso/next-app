@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           />
           <div className="lg:hidden">
             <button
-              className="text-black focus:outline-none"
+              className="pr-4 text-black focus:outline-none"
               onClick={handleMenuToggle}
             >
               {isMenuOpen ? "Close Menu" : "Open Menu"}
