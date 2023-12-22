@@ -22,9 +22,9 @@ const Navbar: React.FC = () => {
             alt="Your Image Alt Text"
             width={1024}
             height={324}
-            className={"max-w-[200px] lg:max-w-[300px]"}
+            className={"max-w-[200px] lg:max-w-[300px] pr-4"}
           />
-          <div className="lg:hidden pr-4">
+          <div className="lg:hidden">
             <button
               className="text-black focus:outline-none"
               onClick={handleMenuToggle}
